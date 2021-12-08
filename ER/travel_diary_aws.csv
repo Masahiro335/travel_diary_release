@@ -1,0 +1,51 @@
+ID,氏名,図形ライブラリ,ページ ID,コンテナー,グループ化,線の始点,線の終点,始点の矢印,終点の矢印,テキストエリア 1
+1,ページ,,,,,,,,,ページ 1
+2,Virtual Private Cloud,AWS アーキテクチャ 2019,1,5,,,,,,Virtual Private Cloud
+3,Public Subnet,AWS アーキテクチャ 2019,1,2|5,,,,,,Public Subnet
+4,Private Subnet,AWS アーキテクチャ 2019,1,2|5,,,,,,Private Subnet
+5,AWS Cloud,AWS アーキテクチャ 2019,1,,,,,,,AWS Cloud
+6,Generic Group,AWS アーキテクチャ 2019,1,,,,,,,Generic Group
+7,Generic Group,AWS アーキテクチャ 2019,1,,,,,,,Generic Group
+8,Generic Group,AWS アーキテクチャ 2019,1,,,,,,,Generic Group
+9,Generic Group,AWS アーキテクチャ 2019,1,,,,,,,Generic Group
+10,MinimalTextBlock,標準,1,,,,,,,インフラ図(AWS)
+11,Docker,Azure 2019,1,6,,,,,,Docker
+12,Internet gateway,AWS アーキテクチャ 2019,1,5,,,,,,Internet gateway
+13,Endpoints,AWS アーキテクチャ 2019,1,5,,,,,,Endpoints
+14,Bucket,AWS アーキテクチャ 2019,1,9,,,,,,本番用Bucket
+15,Bucket,AWS アーキテクチャ 2019,1,9,,,,,,開発用Bucket
+16,AWS General Users,AWS アーキテクチャ 2019,1,,,,,,,Users
+17,ノート PC,Azure 2015,1,6,,,,,,Computer
+18,MinimalTextBlock,標準,1,,,,,,,"S3
+"
+19,Application Load Balancer,AWS アーキテクチャ 2019,1,2|5,,,,,,Application Load Balancer
+20,MinimalTextBlock,標準,1,,,,,,,開発環境
+21,AWS CodeDeploy,AWS アーキテクチャ 2017,1,8,,,,,,AWS CodeDeploy
+22,AWS CodePipeline,AWS アーキテクチャ 2017,1,,,,,,,AWS CodePipeline
+23,Amazon EC2,AWS アーキテクチャ 2017,1,2|3|5,,,,,,Amazon EC2
+24,Amazon RDS,AWS アーキテクチャ 2017,1,2|4|5,,,,,,Amazon RDS
+25,AWS Certificate Manager,AWS アーキテクチャ 2017,1,2|5,,,,,,AWS Certificate Manager
+26,Amazon Route 53,AWS アーキテクチャ 2017,1,,,,,,,Amazon Route 53
+27,GitHub,Azure 2015,1,7,,,,,,GitHub
+28,AWS CodeBuild,AWS アーキテクチャ 2017,1,8,,,,,,AWS CodeBuild
+29,MinimalTextBlock,標準,1,7,,,,,,"mater(開発環境用)
+"
+30,MinimalTextBlock,標準,1,7,,,,,,"release(本番環境用)
+"
+31,AWS CodeCommit,AWS アーキテクチャ 2017,1,8,,,,,,AWS CodeCommit
+32,テキスト,標準,1,2|4|5,,,,,,(PostgreSQL)
+33,線,,1,,,23,24,None,Arrow,
+34,線,,1,,,16,26,None,Arrow,
+35,線,,1,,,19,3,None,Arrow,
+36,線,,1,,,6,7,None,Arrow,
+37,線,,1,,,7,8,None,Arrow,
+38,線,,1,,,12,2,None,Arrow,
+39,線,,1,,,26,5,None,Arrow,
+40,線,,1,,,8,23,None,Arrow,
+41,線,,1,,,22,22,None,Arrow,
+42,線,,1,,,22,22,None,Arrow,
+43,線,,1,,,28,21,None,Arrow,
+44,線,,1,,,31,28,None,Arrow,
+45,線,,1,,,15,13,None,Arrow,
+46,線,,1,,,13,15,None,Arrow,
+47,線,,1,,,13,14,None,Arrow,

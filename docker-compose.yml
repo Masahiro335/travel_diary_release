@@ -1,0 +1,40 @@
+version: '3'
+services:
+  php: # WEBサーバの設定
+    build: ./php
+    volumes:
+      # 開発に使うソースファイル
+      - ./cake/src:/var/www/html/src
+      - ./cake/config:/var/www/html/config
+      - ./cake/templates:/var/www/html/templates
+      - ./cake/webroot:/var/www/html/webroot
+    ports:
+      - 80:80 # ポートの転送設定
+    environment:
+      DATABASE_CONTAINER_NAME: postgres
+      OPERATING_ENV: local
+      DATABASE_NAME: travel_diary
+
+  postgres: # DBサーバの設定
+    build: ./postgres
+    environment: # postgresの初期設定（ユーザー名、パスワード、DB名を指定）
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgrespass
+      POSTGRES_DB: travel_diary
+      DATABASE_HOST: localhost
+      POSTGRES_HOST_AUTH_METHOD: trust # パスワード認証が要らない
+    ports:
+      - 65432:5432 # ポート転送の設定 ... ホスト側ポート:コンテナ内ポート (ポー>ト番号を同じにすると起動にエラーになる)
+    volumes:
+      - ./postgres/init:/docker-entrypoint-initdb.d  # コンテナ作成時に実行されるsqlをマップ
+      - ./postgres/pgdata:/var/lib/postgresql  # DBの内容をホストに保存
+
+  pgadmin:
+    image: dpage/pgadmin4
+    volumes:
+      - ./pgadmin:/var/lib/pgadmin  # 設定の内容をホストに保存
+    ports:
+      - 5050:80
+    environment:
+       PGADMIN_DEFAULT_EMAIL: pgadmin@pgadmin.co.jp
+       PGADMIN_DEFAULT_PASSWORD: '0000'

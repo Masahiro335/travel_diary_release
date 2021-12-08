@@ -1,0 +1,16 @@
+#!/bin/bash
+sudo yum update -y
+sudo yum install -y httpd
+curl -sS https://getcomposer.org/installer | sudo php
+sudo mv composer.phar /usr/local/bin/composer
+sudo ln -s /usr/local/bin/composer /usr/bin/composer
+cd /var/www/html
+composer create-project --prefer-dist cakephp/app cake
+sudo yum install php
+sudo yum install php-pdo php-pgsql
+sudo yum install -y php72-intl php72-mbstring php72-pdo
+sudo yum install postfix
+cd /var/www/html/cake
+composer require firebase/php-jwt:~5.2
+composer require hybridauth/hybridauth:~3.3
+composer require aws/aws-sdk-php
