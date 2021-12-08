@@ -28,6 +28,11 @@ PostgreSQL
 ・インフラ：
 AWS EC2
 AWS S3
+など
 
 ・仮想環境：
 Docker
+
+・非同期通信：
+Ajax
+axios
