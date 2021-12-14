@@ -19,6 +19,8 @@ html/css
 
 ・フレームワーク：
 CakePHP
+
+・ライブラリ：
 jQuery
 Vue.js
 
