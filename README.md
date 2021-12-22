@@ -24,6 +24,11 @@ CakePHP
 jQuery
 Vue.js
 
+・プラグイン：
+Jmap.js
+Select2.js
+Swiper.js
+
 ・SQL：
 PostgreSQL
 
