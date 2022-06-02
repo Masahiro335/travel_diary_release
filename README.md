@@ -12,6 +12,9 @@ https://www.traveldiary335.com/
 
 https://docs.google.com/document/d/1Hmpk_tU6HcorsaIUvLB5MsDdKeZxpnOzGJmqup1YC4E
 
+・制作期間：
+2020年12月 〜 2021年11月
+
 ・言語：
 PHP
 JavaScript
