@@ -38,6 +38,7 @@ PostgreSQL
 ・インフラ：
 AWS EC2
 AWS S3
+AWS Route53
 など
 
 ・仮想環境：
